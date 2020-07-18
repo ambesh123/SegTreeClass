@@ -38,6 +38,9 @@ class SegTree{  //generic segment Tree
         }
 
         T query(int l, int r){
+            
+            if(r < l) return ZERO;
+
             l += N;
             r += N;
 
